@@ -44,6 +44,6 @@ jobs:
         run: |
           az deployment sub what-if \
             --name "GitHub.Actions" \
-            --location "uksouth" \
+            --location "eastus2" \
             --template-file ./src/main.bicep \
             --parameters config=@./src/azureconfig.json
